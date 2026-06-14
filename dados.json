@@ -1,0 +1,51 @@
+[
+    {
+        "nome": "Teclado Sem Fio Redragon Castor Pro Branco com Menta RGB Mecânico 65% com Switch Gentle Mine - Redragon Store",
+        "link": "https://www.redragon.store/teclado-sem-fio-redragon-castor-pro-branco-com-menta-rgb-mecanico-65-com-switch-gentle-mine",
+        "categoria": "Tecnologia",
+        "preco": 349.99,
+        "frete": 20.0
+    },
+    {
+        "nome": "Kit com 45 switch ópticos para Teclados ópticos Redragoon - Redragon Store",
+        "link": "https://www.redragon.store/kit-com-45-switch-opticos-para-teclados-opticos-redragoon",
+        "categoria": "Tecnologia",
+        "preco": 65.0,
+        "frete": 20.0
+    },
+    {
+        "nome": "Gabinete Gamer Rise Mode Galaxy Glass | KaBuM!",
+        "link": "https://www.kabum.com.br/produto/320908/gabinete-gamer-rise-mode-galaxy-glass-mid-tower-atx-lateral-e-frontal-em-vidro-temperado-sem-fans-preto-rm-ga-gg-fb",
+        "categoria": "Tecnologia",
+        "preco": 399.99,
+        "frete": 20.0
+    },
+    {
+        "nome": "Papel De Parede Madeira Adesivo Ripado 20 Metros 3d",
+        "link": "https://produto.mercadolivre.com.br/MLB-3569968857-papel-de-parede-madeira-adesivo-ripado-20-metros-3d-_JM?searchVariation=181468989653",
+        "categoria": "Marketplace",
+        "preco": null,
+        "frete": 20.0
+    },
+    {
+        "nome": "Amazon.com.br",
+        "link": "https://www.amazon.com.br/GELADEIRA-PANASONIC-BB41-BLACK-GLASS/dp/B0BZJT4R3F/ref=asc_df_B0BZJT4R3F?tag=brbngshpdsk-20&linkCode=df0&hvadid=76691152576687&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=688&hvtargid=pla-4580290581372055&psc=1&msclkid=244e9457687512fb94e0fe799f527539",
+        "categoria": "Marketplace",
+        "preco": null,
+        "frete": 20.0
+    },
+    {
+        "nome": "Short Slim Cintura Médio em Jeans com Barra Desfiada Preto",
+        "link": "https://www.lojasrenner.com.br/p/short-slim-cintura-medio-em-jeans-com-barra-desfiada/-/A-929599593-COR929599593-32.br.lr?sku=929599614",
+        "categoria": "Vestuário",
+        "preco": 129.9,
+        "frete": 20.0
+    },
+    {
+        "nome": "Suéter em Tricô Trançado com Mangas Longas Cinza",
+        "link": "https://www.lojasrenner.com.br/p/sueter-em-trico-trancado-com-mangas-longas/-/A-931338051-br.lr?sku=931338069",
+        "categoria": "Vestuário",
+        "preco": 179.9,
+        "frete": 20.0
+    }
+]

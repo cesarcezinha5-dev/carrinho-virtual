@@ -1,0 +1,22 @@
+**************************************************
+RELATÓRIO GERAL
+**************************************************
+
+Total de produtos com preço identificado: 3
+
+Categoria: Tecnologia
+Quantidade: 3
+Total: R$874.98
+------------------------------
+
+**************************************************
+Total produtos: R$814.98
+Total fretes: R$60.00
+Total geral: R$874.98
+**************************************************
+
+**************************************************
+PRODUTOS SEM PREÇO IDENTIFICADO
+**************************************************
+- Papel De Parede Madeira Adesivo Ripado 20 Metros 3d
+- Amazon.com.br
