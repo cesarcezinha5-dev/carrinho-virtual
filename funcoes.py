@@ -1,5 +1,6 @@
 from scraper import obter_titulo
 import json
+from urllib.parse import urlparse
 
 
 def obter_link():
@@ -12,34 +13,89 @@ def obter_link():
 
     return url, titulo
 
+def carregar_sites_categorias():
 
-def categorizar_produto(url):     
+    try:
+
+        with open(
+            "sites_categorias.json",
+            "r",
+            encoding="utf-8"
+        ) as arquivo:
+
+            return json.load(arquivo)
+
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
+def salvar_site_categoria(
+    dominio,
+    categoria
+):
+
+    sites = carregar_sites_categorias()
+
+    sites[dominio] = categoria
+
+    with open(
+        "sites_categorias.json",
+        "w",
+        encoding="utf-8"
+    ) as arquivo:
+
+        json.dump(
+            sites,
+            arquivo,
+            ensure_ascii=False,
+            indent=4
+        )
+
+
+def obter_dominio(url):
+
+    dominio = urlparse(url).netloc
+
+    dominio = dominio.replace(
+        "www.",
+        ""
+    )
+
+    return dominio
+
+
+def categorizar_produto(url):
+
     url = url.lower()
+
+    dominio = obter_dominio(url)
+
+    sites = carregar_sites_categorias()
+
+    if dominio in sites:
+        return sites[dominio]
 
     if "nike" in url or "adidas" in url or "centauro" in url or "netshoes" in url:
         return "Vestuário"
 
-    elif "kabum" in url or "pichau" in url or "terabyteshop" in url or "americanas" in url or "submarino" in url or "magazine luiza" in url:    
+    elif "kabum" in url or "pichau" in url or "terabyteshop" in url:
         return "Tecnologia"
 
-    elif "redragon" in url or "logitech" in url or "razer" in url or "corsair" in url or "hyperx" in url or "apple" in url or "samsung" in url or "xiaomi" in url or "asus" in url or "lenovo" in url:
+    elif "redragon" in url or "logitech" in url or "razer" in url:
         return "Tecnologia"
 
-    elif "mercadolivre" in url or "amazon" in url or "enjoei" in url or "olx" in url or "shopee" in url or "aliexpress" in url or "facebook marketplace" in url:
+    elif "mercadolivre" in url or "amazon" in url or "enjoei" in url or "olx" in url or "shopee" in url:
         return "Marketplace"
-    
-    elif "pioner" in url or "cobrecar" in url or "mercadocar" in url or "moura" in url or "bosch" in url or "continental" in url or "goodyear" in url or "michelin" in url:
+
+    elif "pioner" in url or "cobrecar" in url or "mercadocar" in url:
         return "Automovel"
-    
-    elif "americanas" in url or "submarino" in url or "magazine luiza" in url or "casas bahia" in url or "carrefour" in url or "extra" in url:
-        return "Eletrodomésticos" \
-    
-    elif "wella" in url or "loreal" in url or "natura" in url or "avon" in url or "o boticário" in url or "eudora" in url or "felps" in url or "wepink" in url or "brae" in url or "haskell" in url:
+
+    elif "wella" in url or "loreal" in url or "natura" in url:
         return "Beleza"
-    
-    elif "livraria cultura" in url or "saraiva" in url or "amazon" in url or "submarino" in url or "americanas" in url or "magazine luiza" in url:
+
+    elif "livraria cultura" in url or "saraiva" in url:
         return "Livros"
-    
+
     else:
         return "Outros"
     

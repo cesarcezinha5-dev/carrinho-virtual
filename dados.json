@@ -47,5 +47,19 @@
         "categoria": "Vestuário",
         "preco": 179.9,
         "frete": 20.0
+    },
+    {
+        "nome": "Suéter em Tricô com Manga Raglan Bordô",
+        "link": "https://www.lojasrenner.com.br/p/sueter-em-trico-com-manga-raglan/-/A-930411375-br.lr?sku=930411412",
+        "categoria": "Vestuário",
+        "preco": 139.9,
+        "frete": 20.0
+    },
+    {
+        "nome": "Casaco de Pelo Sintético com Gola Cinza",
+        "link": "https://www.lojasrenner.com.br/p/casaco-de-pelo-sintetico-com-gola/-/A-930533321-br.lr?sku=930533364",
+        "categoria": "Vestuário",
+        "preco": 439.9,
+        "frete": 22.0
     }
 ]

@@ -94,6 +94,13 @@ if __name__ == "__main__":
 
                         continue
 
+                dominio = funcoes.obter_dominio(url)
+
+                funcoes.salvar_site_categoria(
+                    dominio,
+                    categoria
+                )
+
             print("*" * 50)
 
             preco = scraper.obter_preco(url)
